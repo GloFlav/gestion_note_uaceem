@@ -1,0 +1,162 @@
+.bg-l{
+    display: block;
+    z-index: -10;
+    filter: blur(100px);
+    position: absolute;
+    padding: 20%;
+    top: -2%;
+    left: -8%;
+    background: #596ada5c;
+    border-radius: 50%;
+    /* background-color: #52a4fc9d; */
+    box-shadow: 0px 0px 1000px rgba(155, 165, 230, 0.296), 0px 0px 1000px rgba(155, 165, 230, 0.655), 0px 0px 3000px rgba(155, 165, 230, 0.176);
+}
+
+
+.bg-r{
+    display: block;
+    z-index: -10;
+    filter: blur(100px);
+    position: absolute;
+    padding: 10%;
+    top: 5%;
+    left: 80%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(228, 120, 255, 0.45) 23.88%, rgba(255, 255, 255, 0.45) 99.96%);
+    box-shadow: 0px 0px 1000px #93c7ff40, 0px 0px 1000px #93c7ff48, 0px 0px 3000px #93c7ff21;
+}
+
+
+.bg-r-pink{
+    z-index: -5;
+    filter: blur(100px);
+    position: absolute;
+    padding: 30%;
+    top: -130%;
+    left: 53%;
+    border-radius: 50%;
+    background-color: #93c7ff5f;
+    box-shadow: 0px 0px 1000px #93c7ff40, 0px 0px 1000px #93c7ff48, 0px 0px 3000px #93c7ff21;
+}
+
+.bg-r-violet{
+    z-index: -5;
+    filter: blur(100px);
+    position: absolute;
+    padding: 30%;
+    top: 40%;
+    left: -30%;
+    border-radius: 50%;
+    background-color: #93c7ff5f;
+    box-shadow: 0px 0px 1000px #93c7ff40, 0px 0px 1000px #93c7ff48, 0px 0px 3000px #93c7ff21;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .bg-l{
+        padding: 30%;
+        top: -45%;
+        left: -30%;
+    }
+
+    .bg-r{
+        padding: 10%;
+        top: 60%;
+        left: 80%;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .bg-l{
+        padding: 40%;
+        top: -45%;
+        left: -30%;
+    }
+
+    .bg-r{
+        padding: 20%;
+        top: 30%;
+        left: 60%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .bg-l{
+        padding: 40%;
+        top: -30%;
+        left: -30%;
+    }
+    
+    .bg-r{
+        padding: 30%;
+        top: 70%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .bg-l{
+        padding: 40%;
+        top: -10%;
+        left: -30%;
+    }
+}
+
+
+.bg-load-l{
+    display: block;
+    z-index: -10;
+    filter: blur(100px);
+    position: absolute;
+    padding: 20%;
+    top: -35%;
+    left: -18%;
+    background: #596ada5c;
+    border-radius: 50%;
+    /* background-color: #52a4fc9d; */
+    box-shadow: 0px 0px 1000px rgba(155, 165, 230, 0.296), 0px 0px 1000px rgba(155, 165, 230, 0.655), 0px 0px 3000px rgba(155, 165, 230, 0.176);
+}
+
+
+.bg-load-r{
+    display: block;
+    z-index: -10;
+    filter: blur(100px);
+    position: absolute;
+    padding: 10%;
+    top: 80%;
+    left: 80%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(228, 120, 255, 0.45) 23.88%, rgba(255, 255, 255, 0.45) 99.96%);
+    box-shadow: 0px 0px 1000px #93c7ff40, 0px 0px 1000px #93c7ff48, 0px 0px 3000px #93c7ff21;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .bg-load-l{
+        padding: 20%;
+        top: -25%;
+        left: -18%;
+    }
+    .bg-load-r{
+        padding: 15%;
+        top: 70%;
+        left: 70%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .bg-load-l{
+        padding: 25%;
+        top: -15%;
+        left: -18%;
+    }
+    .bg-load-r{
+        padding: 20%;
+        top: 70%;
+        left: 70%;
+    }
+}

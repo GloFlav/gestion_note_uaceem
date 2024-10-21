@@ -1,0 +1,827 @@
+.hero-section {
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+    /* padding-left: 20px;   
+    padding-right: 20px;    */
+}
+
+
+header {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.uaceem-logo-text {
+    font-size: 2.5em;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.125px;
+    font-weight: 900;
+    line-height: normal;
+    color: #275BA5;
+}
+
+.uaceem-slogan-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075px;
+}
+
+.header-navigation{
+    display: block;
+
+}
+
+.header-navigation nav a {
+    color: #275BA5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.075px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+
+.header-navigation nav a:hover { 
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.header-mobile-navigation{
+    display: none;
+
+}
+
+.header-mobile-navigation nav a {
+    color: #275BA5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.075px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+
+.header-mobile-navigation nav a:hover { 
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.burger-icon img {
+    width: 30px;
+    height: auto;
+    transition: 0.2s;
+}
+
+.burger-icon {
+    display: none;
+    text-align: end;
+    background-color: #dceafd;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.burger-icon:hover img{
+    width: 35px;
+    transition: 0.2s;
+}
+
+
+/* HERO SECTION */
+.hero-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text-section {
+    width: 30%;
+}
+
+.hero-image-section {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+/* Hero text section */
+.hero-text-section {
+    padding-left: 70px;
+    width: 90%;
+    font-family: "Inter";
+}
+
+
+.univ-text-section {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.univ-text {
+    font-size: 6em;
+    color: #000;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.46px;
+}
+
+.aceem-text {
+    font-size: 6em;
+    color: #6A8FF2;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.46px;
+}
+
+.avenir-text-section {
+    font-family: Inter;
+    width: 90%;
+}
+
+.avenir-text-section p {
+    padding: 10px 15px;
+    /* width: 50%; */
+    display: inline-block;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #275BA5 -18.94%, #DE99F5 129.46%);
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin: 0;
+    color: #FFF;
+}
+
+.short-text-section {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 0.09px;
+}
+
+#button-inscription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6A8FF2;
+    border: none;
+    border-radius: 39px;
+    padding: 5px 30px;
+    transition: 0.2s;
+}
+#button-inscription:hover {
+    transition: 0.2s;
+    background-color: #346afc;
+}
+
+
+
+#button-inscription span {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: "Inter";
+    color: white;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.09px;
+}
+
+#button-inscription img {
+    width: 40px;
+}
+
+
+
+
+
+/* RESPONSIVE ON 1650 PX */
+@media screen and (max-width: 1650px) {
+    .univ-text {
+        font-size: 5em;
+    }
+    
+    .aceem-text {
+        font-size: 5em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 2.1em;
+    }
+    
+    .short-text-section {
+        font-size: 1em;
+    }
+    #button-inscription span {
+        font-size: 1.2em;
+    }   
+}
+
+@media screen and (max-width: 1400px) {
+    .univ-text {
+        font-size: 3.5em;
+    }
+    
+    .aceem-text {
+        font-size: 3.5em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 1.4em;
+    }
+    
+    .short-text-section {
+        font-size: 0.8em;
+    }
+    #button-inscription span {
+        font-size: 1.2em;
+    }   
+}
+
+@media screen and (max-width: 1130px) {
+    .univ-text {
+        font-size: 3em;
+    }
+    
+    .aceem-text {
+        font-size: 3em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 1.1em;
+    }
+    
+    .short-text-section {
+        font-size: 0.75em;
+    }
+    #button-inscription span {
+        font-size: 1em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 30px;
+        width: 100%;
+        font-family: "Inter";
+    }
+
+    .hero-section {
+        width: 95%;
+        margin: auto;
+        padding-top: 20px;
+    }    
+
+    .header-navigation nav a {
+        font-size: 0.8em;
+    }
+    .avenir-text-section {
+        font-family: Inter;
+        width: 100%;
+    }
+    
+
+    .hero-text-section {
+        width: 60%;
+    }
+    .hero-image-section {
+        width: 40%;
+    }
+    
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #button-inscription img {
+        width: 30px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .univ-text {
+        font-size: 3em;
+    }
+    
+    .aceem-text {
+        font-size: 3em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 1.1em;
+    }
+    
+    .short-text-section {
+        font-size: 0.75em;
+    }
+    #button-inscription span {
+        font-size: 1em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 30px;
+        width: 100%;
+        font-family: "Inter";
+    }
+
+    .hero-section {
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+        padding-right: 20px;
+    }    
+
+    .header-navigation nav a {
+        font-size: 0.7em;
+    }
+    .avenir-text-section {
+        font-family: Inter;
+        width: 100%;
+    }
+    
+
+    .hero-text-section {
+        width: 60%;
+    }
+    .hero-image-section {
+        width: 40%;
+    }
+    
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .uaceem-logo-text {
+        font-size: 2em;
+    }
+    
+    .uaceem-slogan-text {
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+    }
+    
+}
+
+/* Mobile with burger menu */
+@media screen and (max-width: 800px) {
+    .univ-text {
+        font-size: 2.6em;
+    }
+    
+    .aceem-text {
+        font-size: 2.6em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 1em;
+    }
+    
+    .short-text-section {
+        font-size: 0.7em;
+    }
+    #button-inscription span {
+        font-size: 1em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 30px;
+        width: 100%;
+        font-family: "Inter";
+    }
+
+    .hero-section {
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        padding-right: 20px;
+    }    
+
+    .header-navigation nav a {
+        font-size: 0.7em;
+    }
+    .avenir-text-section {
+        font-family: Inter;
+        width: 100%;
+    }
+    
+
+    .hero-text-section {
+        width: 60%;
+    }
+    .hero-image-section {
+        width: 40%;
+    }
+    
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-navigation {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block; /* should be block */
+    }
+
+    
+    .header-mobile-navigation{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #275BA5;
+    }
+    .header-mobile-navigation nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .header-mobile-navigation span {
+        position: absolute;
+        top: 20px;
+        left: 90%;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5em;
+        transition: 0.3s;
+    }
+    .header-mobile-navigation span:hover {
+        transition: 0.3s;
+        font-size: 1.8em;
+    }
+
+    .header-mobile-navigation nav a {
+        color: white;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-family: Inter;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.075px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: 0.3s;
+    }
+
+
+    .header-mobile-navigation nav a:hover { 
+        font-size: 1.2em;
+        transition: 0.3s;
+    }
+
+    
+}
+
+@media screen and (max-width: 750px) {
+    .univ-text {
+        font-size: 2.4em;
+    }
+    
+    .aceem-text {
+        font-size: 2.4em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 0.9em;
+    }
+    
+    .short-text-section {
+        font-size: 0.7em;
+    }
+    #button-inscription span {
+        font-size: 0.8em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 30px;
+        width: 100%;
+        font-family: "Inter";
+    }
+
+    .hero-section {
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        padding-right: 20px;
+    }    
+
+    .header-navigation nav a {
+        font-size: 0.7em;
+    }
+    .avenir-text-section {
+        font-family: Inter;
+        width: 100%;
+    }
+    
+
+    .hero-text-section {
+        width: 60%;
+    }
+    .hero-image-section {
+        width: 40%;
+    }
+    
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .short-text-section {
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    .univ-text {
+        font-size: 3.5em;
+    }
+    
+    .aceem-text {
+        font-size: 3.5em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 1.4em;
+    }
+    
+    .short-text-section {
+        font-size: 1em;
+    }
+    #button-inscription span {
+        font-size: 1em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 10px;
+        margin-top: 50px;
+        width: 90%;
+        font-family: "Inter";
+    }
+
+    .hero-section {
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+        padding-right: 0px;
+    }    
+
+    .header-navigation nav a {
+        font-size: 0.7em;
+    }
+    .avenir-text-section {
+        font-family: Inter;
+        width: 100%;
+    }
+    
+
+    .hero-text-section {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .hero-image-section {
+        width: 100%;
+    }
+    
+    .hero-image {
+        width: 90%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding:    0px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .short-text-section {
+        width: 90%;
+    }
+
+    .burger-icon {
+        margin-right: 20px;
+    }
+    .logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .univ-text {
+        font-size: 2.5em;
+    }
+    
+    .aceem-text {
+        font-size: 2.5em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 1em;
+    }
+    
+    .short-text-section {
+        font-size: 1em;
+    }
+    #button-inscription span {
+        font-size: 1em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 30px;
+        width: 90%;
+        font-family: "Inter";
+    }
+
+    .hero-section {
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+        padding-right: 0px;
+    }    
+
+    .header-navigation nav a {
+        font-size: 0.7em;
+    }
+    .avenir-text-section {
+        font-family: Inter;
+        width: 90%;
+    }
+    
+
+  
+    .uaceem-logo-text {
+        font-size: 1.5em;
+    }
+    
+    .uaceem-slogan-text {
+        color: #000;
+        font-family: Inter;
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .univ-text {
+        font-size: 2em;
+    }
+    
+    .aceem-text {
+        font-size: 2em;
+    }
+    
+    .avenir-text-section p {
+        font-size: 0.7em;
+    }
+    
+    .short-text-section {
+        font-size: 0.7em;
+    }
+    #button-inscription span {
+        font-size: 1em;
+    }   
+
+    /* Hero text section */
+    .hero-text-section {
+        padding-left: 30px;
+        width: 90%;
+        font-family: "Inter";
+    }
+
+    
+}
+
+
+
+.section-title {
+    z-index: 1000;
+    font-weight: 900;
+    font-size: 4.5em;
+    text-align: center;
+    color: #30449C;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-title {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-title {
+        font-size: 2.5em;
+    }
+}
+
+
+/* Styles for tablets and large phones */
+@media screen and (max-width: 450px) {
+    .section-title {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,111 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    background-color: #ffffff; /* Blue background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-out;
+    z-index: 10000; /* Ensure it's above all other content */
+}
+
+/* Loader content (e.g., GIF or icon) */
+
+.loading-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    /* background-color: antiquewhite; */
+}
+
+
+.logo-loading {
+    width: 400px; 
+    height: 400px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation: play-opacity 1.5s infinite ;
+}
+
+.aceem-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* Fade-out animation for the loader */
+
+.svg-l-w{
+    width: 188px;
+    height: 719px;
+}
+
+
+.svg-r-w{
+    width: 250px;
+    height: 719px;
+}
+
+
+.loading-text{
+    font-size: 25px;
+    color: #007BFF;
+    padding: 20px;
+    z-index: 2000;
+}
+
+
+
+@keyframes fade-out-loading {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@keyframes play-opacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fade-out {
+    animation: fade-out-loading 0.5s ease-in-out 1 forwards;
+    /* display: none; */
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-loading {
+        width: 200px; 
+        height: 200px;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

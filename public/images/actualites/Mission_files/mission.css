@@ -1,0 +1,494 @@
+
+/*mission */
+
+/* background */
+.absolute {
+    position: absolute;
+    top: 50px !important;
+    inset: 0;
+    justify-content: start;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bg-shape1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 10s infinite;
+}
+
+.bg-shape2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 9999px;
+    position: relative;
+    animation: two 10s infinite;
+}
+
+.disapear {
+    display: block;
+}
+
+@keyframes one {
+    0% {
+        left: 20px;
+        top: 20px;
+    }
+
+    25% {
+        left: -200px;
+        top: 140px;
+    }
+
+    50% {
+        left: 40px;
+        top: 300px;
+    }
+
+    75% {
+        left: 100px;
+        top: 200px;
+    }
+
+    100% {
+        left: 20px;
+        top: 20px;
+    }
+}
+
+@keyframes two {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        right: 200px;
+        bottom: 140px;
+    }
+
+    50% {
+        right: 40px;
+        bottom: 300px;
+    }
+
+    75% {
+        right: 50px;
+        bottom: 10px;
+    }
+
+    100% {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.opacity {
+    opacity: .5;
+}
+
+.bg-blur {
+    filter: blur(90px);
+}
+
+.bg-primary {
+    background-color: #ab9fff;
+}
+
+.bg-teal {
+    background-color: #76aada;
+}
+
+.bg-purple {
+    background-color: rgb(8, 196, 253)
+}
+
+.mission {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+/* .center {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.stack-area {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.right,
+.left {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    flex-basis: 50%;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.card {
+    color: white;
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 35px;
+    border-radius: 6mm;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.card:nth-child(1) {
+    background: #76aada;
+    z-index: 4;
+}
+
+.card:nth-child(2) {
+    background: #ab9fff;
+    z-index: 3;
+}
+
+.card:nth-child(3) {
+    background: #76aada;
+    z-index: 2;
+}
+
+.card:nth-child(4) {
+    background: #ab9fff;
+    z-index: 1;
+}
+
+.sub {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content {
+    font-size: 20px;
+}
+
+.card.active {
+    transform-origin: bottom left;
+}
+
+.left {
+    margin-left: 5  0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .title {
+    width: 100%;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0.2rem;
+} */
+
+
+
+.sub-title {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 0.2rem;
+}
+
+.top,
+.bottom {
+    width: 100%;
+    height: 100vh;
+    font-family: poppins;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CSS Code for responsiveness*/
+@media screen and (max-width: 800px) {
+    .left {
+        position: relative;
+        width: 90vw;
+        margin-left: 20px;
+    }
+    .disapear {
+        display: none;
+    }
+
+    .bg-shape1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 9999px;
+        position: relative;
+        animation: none;
+    }
+    
+    .bg-shape2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 9999px;
+        position: relative;
+        animation: none;
+    }
+
+    .sub-title {
+        font-size: 15px;
+        margin-left: 20px;
+        letter-spacing: 0.1rem;
+    }
+    .sub {
+        font-size: 1.4em;
+    }
+    .content {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .card {
+        color: white;
+        width: 200px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 17px;
+        display: flex;
+    }
+    .cards {
+        width: 80%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+
+
+
+/* dirigeant*/
+.dirigeant {
+
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+
+
+}
+
+.wrapper {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wrapper .card-person {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .card-person img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+}
+
+.wrapper .back-face img {
+    height: 60px;
+    width: 60px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.331);
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+}
+
+.back-face .info {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.info p {
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.dirigeants {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.post {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000f6d;
+}
+
+.grand-titre {
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+#left-to-right {
+    position: absolute;
+    left: 0;
+    animation: scroll-left 8s linear infinite;
+}
+
+#right-to-left {
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    animation: scroll-right 8s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+        /* Commence à droite */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Finit à gauche */
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0%);
+        /* Commence à gauche */
+    }
+
+    100% {
+        transform: translateX(50%);
+        /* Finit à droite */
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1100px) {
+    .mission {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .sub-title {
+        font-size: 20px;
+        margin-left: 20px;
+        letter-spacing: 0.1rem;
+    }
+    .sub {
+        font-size: 1.4em;
+    }
+    .content {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .card {
+        color: white;
+        width: 300px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 17px;
+        display: flex;
+    }
+    .cards {
+        width: 80%;
+        height: 100%;
+        position: relative;
+    }
+    .bg-shape1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 9999px;
+        position: relative;
+        animation: none;
+    }
+    
+    .bg-shape2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 9999px;
+        position: relative;
+        animation: none;
+    }
+    
+}

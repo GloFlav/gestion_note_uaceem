@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.a4-sheet {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: auto;
+    margin-block: 1rem;
+    padding: 20mm; /* Margin inside the A4 sheet */
+    padding-top: 5mm;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+    background-image: url("../images/aceem\ backgroud.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: calc(100% - 40mm) auto;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.main-title {
+    text-align: center;
+    font-family: "Freda Font", Times, serif;
+    font-size: 20pt;
+    margin-block: 2.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.grid-item {
+    font-size: 12pt;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.content-paragraph {
+    line-height: 1.5;
+    margin-block: 2rem;
+}
+
+.thank-you {
+    margin-bottom: 2rem;
+}
+
+.documents-title {
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 1.2rem;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: 1rem auto;
+    row-gap: 1rem;
+    column-gap: 0.1rem;
+}
+
+.checkmark {
+    font-weight: bold;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20mm;
+    display: flex;
+    gap: 20%;
+}
+
+.footer-item {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.footer-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .a4-sheet {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 20mm;
+        padding-top: 5mm;
+        border: none;
+        box-shadow: none;
+    }
+}

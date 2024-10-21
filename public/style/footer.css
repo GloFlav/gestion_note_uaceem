@@ -1,0 +1,417 @@
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.copyright {
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 1.1em;
+    margin: auto;
+    text-align: center;
+    font-family: "inter", sans-serif;
+}
+
+.footer-section {
+    background-color: #32407D;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.logo-with-link-footer {
+    width: 30%;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-logo img {
+    width: 8em;
+    height: auto;
+}
+.footer-logo div {
+    display: flex;
+    flex-direction: column;
+}
+.uaceem-logo-text-footer {
+    font-size: 2.3em;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    color: white;
+}
+.uaceem-slogan-text-footer {
+    color: white;
+    font-family: "Inter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075px;
+}
+
+.follow {
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.follow span {
+    font-family: "Inter";
+    color: white;
+    font-size: 1.3em;
+    /* margin-left: 10px;     */
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15px;
+}
+
+.social-media a img{
+    margin-right: 20px;
+    width: 30px;
+    transition: 0.2s;
+    stroke: white;
+}
+
+.social-media a img:hover {
+    width: 27px;
+    transition: 0.2s;
+}
+
+
+
+
+
+.coordonnee {
+    width: 40%;
+}
+.coordonnee h3 {
+    font-family: "Inter";
+    color: white;
+    font-size: 1.3em;   
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15px;
+}
+.coordonnee div div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.coordonnee div div img {
+    width: 25px;
+    margin-right: 10px;
+}
+.coordonnee div div span {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125px;
+}
+
+
+
+
+
+.footer-links{
+    width: 20%;
+}
+
+.link-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Inter";
+}
+
+.link-nav a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link-nav a span {
+    transition: 0.2s;
+}
+
+.link-nav a span img {
+    width: 10px;
+    transition: 0.2s;
+}
+
+.link-nav a:hover span {
+    transition: 0.2s;
+    margin-right: 5px;
+}
+
+.last-links {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* RESPONSIVE DESIGN FROM SCREEN UNDER 1200 WITHOUT SPLIT */
+@media screen and (max-width: 1200px) {
+    .copyright {
+        padding: 15px 0px;
+        font-size: 0.8em;
+    }
+    .footer-logo img {
+        width: 7em;
+    }
+    .uaceem-logo-text-footer {
+        font-size: 2em;
+        letter-spacing: 0.8px;
+        line-height: normal;
+        color: white;
+    }
+    .uaceem-slogan-text-footer {
+        font-size: 0.6em;
+    }
+    .coordonnee div div img {
+        width: 22px;
+        margin-right: 10px;
+    }
+    .coordonnee div div span {
+        font-size: 1em;
+    }
+}
+
+
+
+/* RESPONSIVE DESIGN FOR SCREEN UNDER 950 WITHOUT SPLIT */
+@media screen and (max-width: 950px) {
+    .footer-logo img {
+        width: 6.8em;
+    }
+    .uaceem-logo-text-footer {
+        font-size: 1.7em;
+    }
+    .uaceem-slogan-text-footer {
+        font-size: 0.5em;
+    }
+    .coordonnee div div {
+        margin-bottom: 10px;
+    }
+    .coordonnee div div img {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .coordonnee div div span {
+        font-size: 0.8em;
+    }
+    .social-media a img{
+        margin-right: 15px;
+        width: 24px;
+        transition: 0.2s;
+    }    
+    .social-media a img:hover {
+        width: 22px;
+        transition: 0.2s;
+    }
+    .follow span {
+        font-size: 1em;
+        margin-bottom: 7px;
+    }
+}
+
+
+
+/* RESPONSIVE DESIGN FOR SCREEN UNDER 950 WITHOUT SPLIT */
+@media screen and (max-width: 750px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .footer-section {
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .logo-with-link-footer {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .coordonnee {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-links{
+        width: 100%;
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+    .footer-logo img {
+        width: 8em;
+    }
+    .uaceem-logo-text-footer {
+        font-size: 2.3em;
+    }
+    .uaceem-slogan-text-footer {
+        font-size: 0.73em;
+    }
+
+    .coordonnee h3 {
+        font-size: 1.5em;
+    }
+    .coordonnee div div {
+        margin-bottom: 20px;
+    }
+    .coordonnee div div img {
+        width: 25px;
+        margin-right: 10px;
+    }
+    .coordonnee div div span {
+        font-size: 1.2em;
+    }
+
+    .social-media a img{
+        margin-right: 20px;
+        width: 10px;
+        transition: 0.2s;
+    }    
+    .social-media a img:hover {
+        width: 22px;
+        transition: 0.2s;
+    }
+    .follow {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .follow span {
+        font-size: 1em;
+        margin-bottom: 7px;
+    }
+    .follow div a {
+        justify-content: center;
+        margin: auto;
+    }
+    .follow div a img {
+        width: 2.5em;
+    }
+
+    .link-nav a {
+        font-size: 1.2em;
+    }
+    
+    .link-nav a span img {
+        width: 15px;
+    }
+    .link-nav a:hover span {
+        transition: 0.2s;
+        margin-right: 7px;
+    }
+    
+}
+
+
+/* RESPONSIVE DESIGN FOR SCREEN UNDER 950 WITHOUT SPLIT */
+@media screen and (max-width: 500px) {
+    .footer-section {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .logo-with-link-footer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer-logo img {
+        width: 7.4em;
+    }
+    .uaceem-logo-text-footer {
+        font-size: 1.9em;
+    }
+    .uaceem-slogan-text-footer {
+        font-size: 0.6em;
+    }
+
+    .coordonnee h3 {
+        font-size: 1.2em;
+    }
+    .coordonnee div div {
+        margin-bottom: 15px;
+    }
+    .coordonnee div div img {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .coordonnee div div span {
+        font-size: 1em;
+    }
+
+    .social-media a img{
+        margin-right: 20px;
+        width: 25px !important;
+        stroke: white;
+    }    
+    .social-media a img:hover {
+        width: 22px;
+        transition: 0.2s;
+    }
+    .follow {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .follow span {
+        font-size: 0.5em;
+        margin-bottom: 7px;
+    }
+    .follow div a {
+        justify-content: center;
+        margin: auto;
+    }
+    .follow div a img {
+        width: 2.5em;
+    }
+
+    .link-nav a {
+        font-size: 1em;
+    }
+    
+    .link-nav a span img {
+        width: 10px;
+    }
+    .link-nav a:hover span {
+        transition: 0.2s;
+        margin-right: 7px;
+    }
+    .copyright {
+        width: 100%;
+        padding: 20px 0px;
+        font-size: 0.7em;
+    }
+}

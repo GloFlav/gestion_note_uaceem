@@ -1,0 +1,422 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: #F1F4FF;
+    position: relative;
+    overflow-y: scroll;
+    font-family: "Inter", sans-serif;
+}
+
+.title_alaune{
+    text-align: center;
+}
+
+.title_une{
+    font-family: "Inter", sans-serif;
+    color: #275BA5;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.container_alaune{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.alaune_un, .alaune_deux, .alaune_trois{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo_alaune{
+    width: 80%;
+    height: 100%;
+    transition:  500s ease;
+}
+
+.VP_1:hover{
+    background-color: #4f64a8;
+    cursor: pointer;
+}
+
+.VP_2:hover{
+    background-color: #4f64a8;
+    cursor: pointer;
+}
+
+.VP_2:hover{
+    background-color: #4f64a8;
+    cursor: pointer;
+}
+
+.VP_1, .VP_2, .VP_3{
+    background-color: #6A8FF2;
+    border-radius: 39px;
+    border-color: transparent;
+    padding: 10px;
+    width: 30%;
+    margin-top: -12.5%;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+    text-decoration: none;
+}
+
+.bouton_alaune{
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 750;
+    margin: auto;
+    transition:  500s ease;
+}
+
+.bouton_alaune:hover{
+    cursor: pointer;
+}
+
+.arrow_right{
+    width: 16%;
+    margin: auto;
+}
+
+
+
+
+
+/*Media queries screen 1500px*/
+@media screen and (max-width: 1500px) {
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 5px;
+        width: 30%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+/*Media queries screen 1250px*/
+@media screen and (max-width: 1250px) {
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 17px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+
+
+/*Media queries screen 1100px*/
+@media screen and (max-width: 1100px) {
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 10px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+
+/*Media queries screen 1000px*/
+@media screen and (max-width: 1000px) {
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 10px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+/*Media queries screen 850px*/
+@media screen and (max-width: 850px) {
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 10px;
+        font-weight: 750;
+        margin: auto;
+    }
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 3px;
+        margin-bottom: 10px;
+        width: 35%;
+        margin-top: -12.5%;
+        display: flex;
+        justify-content: space-between;
+        transition: transform 0.5s ease;
+        text-decoration: none;
+    }
+    
+}
+
+/*Media queries screen 750px*/
+@media screen and (max-width: 750px) {
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 8px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+/*Media queries screen 650px*/
+@media screen and (max-width: 650px) {
+    .title_une{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        font-weight: 750;
+        margin: auto;
+    }
+    
+
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        width: 25%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*Media queries screen 644px*/
+@media screen and (max-width: 644px) {
+
+
+    .title_une{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .container_alaune{
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .alaune_un, .alaune_deux, .alaune_trois{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8%;
+    }
+
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 10px;
+        width: 30%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+
+
+/*Media queries screen 500px*/
+@media screen and (max-width: 500px) {
+    .title_une{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .container_alaune{
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 8px;
+        width: 30%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 18px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+
+
+/*Media queries screen 400px*/
+@media screen and (max-width: 400px) {
+    .title_une{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .container_alaune{
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 4px;
+        width: 30%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+
+/*Media queries screen 350px*/
+@media screen and (max-width: 350px) {
+    .title_une{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .container_alaune{
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 4px;
+        width: 30%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 12px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+
+
+
+/*Media queries screen 280px*/
+@media screen and (max-width: 280px) {
+    .title_une{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .container_alaune{
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .VP_1, .VP_2, .VP_3{
+        background-color: #6A8FF2;
+        border-radius: 39px;
+        border-color: transparent;
+        padding: 4px;
+        width: 40%;
+        margin-top: -13.5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bouton_alaune{
+        border-color: transparent;
+        background-color: transparent;
+        color: white;
+        font-size: 12px;
+        font-weight: 750;
+        margin: auto;
+    }
+}
+

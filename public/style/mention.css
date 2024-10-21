@@ -1,0 +1,248 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: #F1F4FF;
+    position: relative;
+    overflow-y: scroll;
+    font-family: "Inter", sans-serif;
+}
+
+.title_mention{
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.title_un{
+    font-family: "Inter", sans-serif;
+    color: #275BA5;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.container_mention {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px 20px;
+}
+
+.liste_mentions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 250px; /* Augmentez cette valeur selon vos besoins */
+    margin: auto;
+}
+
+.img_mentions {
+    width: 100%;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+/* Pour la dernière ligne */
+.liste_mentions img:nth-child(n+7) {
+    margin-left: 70%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+}
+
+
+.img_mentions:hover {
+    transform: scale(1.1); /* Augmente la taille de l'image de 10% lors du survol */
+}
+
+
+
+
+
+/*Media queries screen 1550px*/
+@media screen and (max-width: 1300px) {
+    .container_mention {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .liste_mentions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 100px; /* Augmentez cette valeur selon vos besoins */
+        margin-left: 8%;
+    }
+    
+    .img_mentions {
+        width: 80%;
+        align-items: center;
+    }
+    
+    /* Pour la dernière ligne */
+    .liste_mentions img:nth-child(n+7) {
+        margin-left: 60%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+    }
+
+}
+
+
+
+/*Media queries screen 850px*/
+@media screen and (max-width: 850px) {
+    .container_mention {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .liste_mentions {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px 100px; /* Augmentez cette valeur selon vos besoins */
+        margin-left: 20%;
+    }
+    
+    .img_mentions {
+        width: 80%;
+        align-items: center;
+    }
+    
+    /* Pour la dernière ligne */
+    .liste_mentions img:nth-child(n+7) {
+        margin-left: 0%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+    }
+
+}
+
+
+
+
+/*Media queries screen 620px*/
+@media screen and (max-width: 620px) {
+
+        .container_mention {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .liste_mentions {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px 100px; /* Augmentez cette valeur selon vos besoins */
+            margin-left: 15%;
+        }
+        
+        .img_mentions {
+            width: 80%;
+            align-items: center;
+        }
+        
+        /* Pour la dernière ligne */
+        .liste_mentions img:nth-child(n+7) {
+            margin-left: 0%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+        }
+
+        .title_un{
+            font-family: "Inter", sans-serif;
+            color: #275BA5;
+            font-weight: 900;
+            font-size: 30px;
+        }
+    
+}
+
+
+
+/*Media queries screen 440px*/
+@media screen and (max-width: 440px) {
+    .container_mention {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .liste_mentions {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px 100px; /* Augmentez cette valeur selon vos besoins */
+        margin-left: 8%;
+    }
+    
+    .img_mentions {
+        width: 92%;
+        align-items: center;
+    }
+    
+    /* Pour la dernière ligne */
+    .liste_mentions img:nth-child(n+7) {
+        margin-left: 0%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+    }
+
+    .title_un{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 25px;
+    }
+}
+
+
+
+/*Media queries screen 350px*/
+@media screen and (max-width: 350px) {
+    .container_mention {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .liste_mentions {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px 100px; /* Augmentez cette valeur selon vos besoins */
+        margin-left: 15%;
+    }
+    
+    .img_mentions {
+        width: 80%;
+        align-items: center;
+    }
+    
+    /* Pour la dernière ligne */
+    .liste_mentions img:nth-child(n+7) {
+        margin-left: 0%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+    }
+
+    .title_un{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+}
+
+
+
+/*Media queries screen 300px*/
+@media screen and (max-width: 300px) {
+    .container_mention {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .liste_mentions {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px 100px; /* Augmentez cette valeur selon vos besoins */
+        margin-left: 15%;
+    }
+    
+    .img_mentions {
+        width: 80%;
+        align-items: center;
+    }
+    
+    /* Pour la dernière ligne */
+    .liste_mentions img:nth-child(n+7) {
+        margin-left: 0%; /* Diminuez légèrement cette valeur pour compenser l'espace accru entre les colonnes */
+    }
+
+    .title_un{
+        font-family: "Inter", sans-serif;
+        color: #275BA5;
+        font-weight: 900;
+        font-size: 20px;
+    }
+}
